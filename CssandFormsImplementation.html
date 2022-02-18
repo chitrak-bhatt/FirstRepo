@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+<style>
+body {background-color: powderblue;}
+h2   {color: green;font-family: verdana;font-size: 300%;}
+p    {color: yellow;border: 2px solid red; padding: 30px;margin: 50px;}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D8EEEE;
+}
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+<!--<link rel="stylesheet" href="styles.css">-->
+</head>
+
+<small>inline CSS</small>
+
+<h1 style="color:blue;">A Blue Heading</h1>
+<h2>Internal CSS Applied</h2>
+<a href="https://www.w3schools.com/">Visit W3Schools.com! using links</a> <hr>
+<p1 style="color:red;">A red paragraph.</p1>
+<p>internal css poara</p>
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">HTML Tutorial</button><br>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit HTML Tutorial</a>
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+<table>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+<hr>
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+<hr>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+<hr>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Tea</dt>
+  <dd>- Brown hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+  
+</dl>
+<hr>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea
+    <ul style="list-style-type:square;">
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<iframe src="google.com" style="height:200px;width:300px" title="Iframe Example"></iframe>
+<br>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit" value="Submit">
+</form>
+<br>
+<form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">  
+  <input type="submit" value="Submit">
+</form>
+<hr>
+<form action="/action_page.php">
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
